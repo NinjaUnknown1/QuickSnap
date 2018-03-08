@@ -26,6 +26,18 @@ namespace CardGames
 			{
 				myGame.FlipNextCard ();
 			}
+
+			if (myGame.IsStarted) {
+				if (SwinGame.KeyTyped (KeyCode.vk_LSHIFT) && SwinGame.KeyTyped (KeyCode.vk_RSHIFT)) {
+					//TODO Add sound effects
+				} else if (SwinGame.KeyTyped (KeyCode.vk_LSHIFT)) {
+					myGame.PlayerHit (0);
+					Console.WriteLine("Im here as well...");
+				} else if (SwinGame.KeyTyped (KeyCode.vk_RSHIFT)) {
+					myGame.PlayerHit (1);
+					Console.WriteLine("Im here too...");
+				}
+			}
 		}
 
 		/// <summary>
