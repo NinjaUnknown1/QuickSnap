@@ -49,6 +49,8 @@ namespace CardGames
 		private static void DrawGame(Snap myGame)
 		{
 			SwinGame.ClearScreen(Color.White);
+			SwinGame.LoadBitmapNamed('background' ,'background1.png' );
+			SwinGame.DrawBitmap('background' ,0 ,0 );
 
 			// Draw the top card
 			Card top = myGame.TopCard;
