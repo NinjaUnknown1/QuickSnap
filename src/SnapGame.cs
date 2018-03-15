@@ -12,7 +12,7 @@ namespace CardGames
             cards = SwinGame.LoadBitmapNamed ("Cards", "Cards.png");
             SwinGame.BitmapSetCellDetails (cards, 82, 110, 13, 5, 53);      // set the cells in the bitmap to match the cards
 
-            SwinGame.LoadFontNamed("GameFont", "Chunkfive.otf", 12);
+            SwinGame.LoadFontNamed("GameFont", "Candy_Shop_Personal_Use.ttf", 12);
         }
 
 		/// <summary>
